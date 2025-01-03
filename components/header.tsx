@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   inputText: {
-    width: 160,
+    width: 180,
   },
 });
