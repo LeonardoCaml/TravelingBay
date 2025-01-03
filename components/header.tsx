@@ -6,7 +6,10 @@ export default function Header() {
     <View style={styles.container}>
       <View style={styles.header}>
         <MaterialIcons name="account-circle" size={40} />
-        <TextInput style={styles.input} placeholder="procurar nota" />
+        <View style={styles.input}>
+          <MaterialIcons name="search" size={20} style={styles.inputIcon} />
+          <TextInput style={styles.inputText} placeholder="procurar nota" />
+        </View>
         <MaterialIcons name="dehaze" size={30} />
       </View>
     </View>
@@ -16,8 +19,8 @@ export default function Header() {
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    flex: .2,
-    justifyContent: 'center'
+    flex: 0.2,
+    justifyContent: "space-between",
   },
   header: {
     flexDirection: "row",
@@ -25,9 +28,16 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   input: {
-    width: "70%",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
     borderWidth: 2,
     borderRadius: 30,
-    paddingHorizontal: 20,
+  },
+  inputIcon: {
+    padding: 10,
+  },
+  inputText: {
+    width: 160,
   },
 });
