@@ -19,7 +19,7 @@ export default function Header() {
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    flex: 0.2,
+    height: 50,
     justifyContent: "space-between",
   },
   header: {

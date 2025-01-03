@@ -1,37 +1,11 @@
+import CardList from "@/components/CardList";
 import Header from "@/components/header";
 import React from "react";
-import {
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-  VirtualizedList,
-} from "react-native";
-
-interface Item {
-  id: number;
-  name: string;
-}
-
-const archives: Item[] = [
-  { id: 1, name: "Acapulco" },
-  { id: 2, name: "Maldivas" },
-  { id: 3, name: "Viagem a trabalho" },
-];
-
-const getItemCount = (_data: unknown) => 50;
+import { StatusBar, StyleSheet, Text, View } from "react-native";
 
 export default function RootLayout() {
-  const Card = ({ item }: { item: Item }) => (
-    <View>
-      <View style={styles.card} />
-      <Text style={styles.cardTitle}>{item.name}</Text>
-    </View>
-  );
-
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar
         barStyle="dark-content"
         backgroundColor="#FFFFFF"
@@ -40,14 +14,8 @@ export default function RootLayout() {
       <Header />
       <Text style={styles.textTittle}>Olá, usuário</Text>
       <Text style={styles.text}>Pronto para planejar mais uma viagem?</Text>
-      {/* <VirtualizedList
-        data={archives}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={Card}
-        style={styles.list}
-        getItemCount={getItemCount}
-      /> */}
-    </ScrollView>
+      <CardList />
+    </View>
   );
 }
 
