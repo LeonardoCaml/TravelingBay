@@ -1,0 +1,298 @@
+{
+  "travel": [
+    {
+      "id": 1,
+      "title": "Acapulco",
+      "expenses": [
+        {
+          "spentTitle": "Alimentação",
+          "category": "food",
+          "spentValue": 200,
+          "NumberOfDays": 3
+        },
+        {
+          "spentTitle": "Passagem",
+          "category": "ticket",
+          "spentValue": 1500,
+          "NumberOfDays": 3
+        },
+        {
+          "spentTitle": "Hospedagem",
+          "category": "hosting",
+          "spentValue": 200,
+          "NumberOfDays": 3
+        }
+      ],
+      "RoadMap": [
+        {
+          "pointTitle": "Museu",
+          "category": "entertainment",
+          "spentValue": 100,
+          "numberOfDays": 1
+        },
+        {
+          "pointTitle": "Praia",
+          "category": "leisure",
+          "spentValue": 50,
+          "numberOfDays": 3
+        }
+      ],
+      "checklist": {
+        "general": [
+          "Passaporte",
+          "Visto",
+          "Passagem aérea",
+          "Documentos pessoais (RG, CPF, CNH)",
+          "Cartão de crédito/débito",
+          "Seguro viagem",
+          "Medicamentos de uso contínuo",
+          "Itens de higiene pessoal",
+          "Carregadores de dispositivos",
+          "Adaptador de tomada",
+          "Roupas adequadas ao clima",
+          "Tênis ou calçado confortável"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Nova York",
+      "expenses": [
+        {
+          "spentTitle": "Alimentação",
+          "category": "food",
+          "spentValue": 300,
+          "NumberOfDays": 5
+        },
+        {
+          "spentTitle": "Passagem",
+          "category": "ticket",
+          "spentValue": 2000,
+          "NumberOfDays": 5
+        },
+        {
+          "spentTitle": "Hospedagem",
+          "category": "hosting",
+          "spentValue": 1000,
+          "NumberOfDays": 5
+        }
+      ],
+      "RoadMap": [
+        {
+          "pointTitle": "Estátua da Liberdade",
+          "category": "sightseeing",
+          "spentValue": 150,
+          "numberOfDays": 1
+        },
+        {
+          "pointTitle": "Central Park",
+          "category": "nature",
+          "spentValue": 0,
+          "numberOfDays": 2
+        },
+        {
+          "pointTitle": "Broadway Show",
+          "category": "entertainment",
+          "spentValue": 200,
+          "numberOfDays": 1
+        }
+      ],
+      "checklist": {
+        "general": [
+          "Passaporte",
+          "Visto",
+          "Passagem aérea",
+          "Documentos pessoais (RG, CPF, CNH)",
+          "Cartão de crédito/débito",
+          "Seguro viagem",
+          "Medicamentos de uso contínuo",
+          "Itens de higiene pessoal",
+          "Carregadores de dispositivos",
+          "Adaptador de tomada",
+          "Roupas adequadas ao clima",
+          "Tênis ou calçado confortável"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Paris",
+      "expenses": [
+        {
+          "spentTitle": "Alimentação",
+          "category": "food",
+          "spentValue": 400,
+          "NumberOfDays": 7
+        },
+        {
+          "spentTitle": "Passagem",
+          "category": "ticket",
+          "spentValue": 2500,
+          "NumberOfDays": 7
+        },
+        {
+          "spentTitle": "Hospedagem",
+          "category": "hosting",
+          "spentValue": 1500,
+          "NumberOfDays": 7
+        }
+      ],
+      "RoadMap": [
+        {
+          "pointTitle": "Torre Eiffel",
+          "category": "sightseeing",
+          "spentValue": 100,
+          "numberOfDays": 1
+        },
+        {
+          "pointTitle": "Museu do Louvre",
+          "category": "culture",
+          "spentValue": 120,
+          "numberOfDays": 2
+        },
+        {
+          "pointTitle": "Caminhada no Sena",
+          "category": "leisure",
+          "spentValue": 0,
+          "numberOfDays": 3
+        }
+      ],
+      "checklist": {
+        "general": [
+          "Passaporte",
+          "Visto",
+          "Passagem aérea",
+          "Documentos pessoais (RG, CPF, CNH)",
+          "Cartão de crédito/débito",
+          "Seguro viagem",
+          "Medicamentos de uso contínuo",
+          "Itens de higiene pessoal",
+          "Carregadores de dispositivos",
+          "Adaptador de tomada",
+          "Roupas adequadas ao clima",
+          "Tênis ou calçado confortável"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Tóquio",
+      "expenses": [
+        {
+          "spentTitle": "Alimentação",
+          "category": "food",
+          "spentValue": 500,
+          "NumberOfDays": 6
+        },
+        {
+          "spentTitle": "Passagem",
+          "category": "ticket",
+          "spentValue": 3000,
+          "NumberOfDays": 6
+        },
+        {
+          "spentTitle": "Hospedagem",
+          "category": "hosting",
+          "spentValue": 1800,
+          "NumberOfDays": 6
+        }
+      ],
+      "RoadMap": [
+        {
+          "pointTitle": "Templo Sensoji",
+          "category": "culture",
+          "spentValue": 50,
+          "numberOfDays": 1
+        },
+        {
+          "pointTitle": "Shibuya Crossing",
+          "category": "urban",
+          "spentValue": 0,
+          "numberOfDays": 1
+        },
+        {
+          "pointTitle": "Akihabara",
+          "category": "shopping",
+          "spentValue": 300,
+          "numberOfDays": 2
+        }
+      ],
+      "checklist": {
+        "general": [
+          "Passaporte",
+          "Visto",
+          "Passagem aérea",
+          "Documentos pessoais (RG, CPF, CNH)",
+          "Cartão de crédito/débito",
+          "Seguro viagem",
+          "Medicamentos de uso contínuo",
+          "Itens de higiene pessoal",
+          "Carregadores de dispositivos",
+          "Adaptador de tomada",
+          "Roupas adequadas ao clima",
+          "Tênis ou calçado confortável"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Sydney",
+      "expenses": [
+        {
+          "spentTitle": "Alimentação",
+          "category": "food",
+          "spentValue": 350,
+          "NumberOfDays": 5
+        },
+        {
+          "spentTitle": "Passagem",
+          "category": "ticket",
+          "spentValue": 2200,
+          "NumberOfDays": 5
+        },
+        {
+          "spentTitle": "Hospedagem",
+          "category": "hosting",
+          "spentValue": 1300,
+          "NumberOfDays": 5
+        }
+      ],
+      "RoadMap": [
+        {
+          "pointTitle": "Sydney Opera House",
+          "category": "culture",
+          "spentValue": 200,
+          "numberOfDays": 1
+        },
+        {
+          "pointTitle": "Bondi Beach",
+          "category": "beach",
+          "spentValue": 0,
+          "numberOfDays": 2
+        },
+        {
+          "pointTitle": "Taronga Zoo",
+          "category": "nature",
+          "spentValue": 100,
+          "numberOfDays": 1
+        }
+      ],
+      "checklist": {
+        "general": [
+          "Passaporte",
+          "Visto",
+          "Passagem aérea",
+          "Documentos pessoais (RG, CPF, CNH)",
+          "Cartão de crédito/débito",
+          "Seguro viagem",
+          "Medicamentos de uso contínuo",
+          "Itens de higiene pessoal",
+          "Carregadores de dispositivos",
+          "Adaptador de tomada",
+          "Roupas adequadas ao clima",
+          "Tênis ou calçado confortável"
+        ]
+      }
+    }
+  ]
+}
