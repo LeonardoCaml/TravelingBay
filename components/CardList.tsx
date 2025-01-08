@@ -1,44 +1,73 @@
-import { Text, StyleSheet, View, Dimensions } from "react-native";
+import {
+  Text,
+  StyleSheet,
+  View,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
 import { useState, useEffect } from "react";
+import { MaterialIcons } from "@expo/vector-icons";
+import fetchTravel from "@/hooks/travel_api";
+import { useRouter } from "expo-router";
 
 const { width } = Dimensions.get("window");
-const item = (width - 60) / 2;
+const ITEM_WIDTH = (width - 60) / 2;
 
-type Expense = {
+interface Travel {
+  id: number | string;
+  title: string;
+  expenses: Expense[];
+  RoadMap: RoadMap[];
+  checklist: Checklist;
+  color: string;
+}
+
+interface Checklist {
+  general: string[];
+}
+
+interface RoadMap {
+  pointTitle: string;
+  category: string;
+  spentValue: number;
+  numberOfDays: number;
+}
+
+interface Expense {
   spentTitle: string;
   category: string;
   spentValue: number;
   NumberOfDays: number;
-};
-
-type Travel = {
-  id: number;
-  title: string;
-  expenses: Expense[];
-};
-
-type TravelsData = {
-  travels: Travel[];
-};
+}
 
 export default function CardList() {
-  const [travel, setTravel] = useState([]);
+  const router = useRouter()
+  const [travel, setTravel] = useState<Travel[]>([]);
 
   useEffect(() => {
-    fetch("https://leonardocaml.github.io/travelingbay_api/travels.json")
-      .then((response) => response.json())
-      .then((data) => setTravel(data.travel))
-      .catch((error) => console.error("Erro ao buscar os dados:", error));
+    const loadData = async () => {
+      const data = await fetchTravel();
+      setTravel(data);
+    };
+
+    loadData();
   }, []);
 
   return (
     <View style={styles.list}>
-      {travel.map((travel) => (
-        <View key={travel.id} style={[styles.col, { width: item }]}>
-          <View style={styles.card}></View>
-          <Text style={styles.cardTitle}>{travel.title}</Text>
-        </View>
+      {travel.map((item) => (
+        <TouchableOpacity
+          key={item.id}
+          style={[styles.col, { width: ITEM_WIDTH }]}
+          onPress={() => router.replace("/travel")}
+        >
+          <View style={[styles.card, { backgroundColor: item.color }]}></View>
+          <Text style={styles.cardTitle}>{item.title}</Text>
+        </TouchableOpacity>
       ))}
+      <View style={styles.addButton}>
+        <MaterialIcons name="add-circle-outline" size={50} />
+      </View>
     </View>
   );
 }
@@ -63,5 +92,11 @@ const styles = StyleSheet.create({
   col: {
     alignItems: "center",
     height: 220,
+  },
+  addButton: {
+    width: 160,
+    height: 160,
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
