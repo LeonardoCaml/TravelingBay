@@ -1,6 +1,5 @@
 import CardList from "@/components/CardList";
 import Header from "@/components/header";
-import { MaterialIcons } from "@expo/vector-icons";
 import React from "react";
 import { ScrollView, StatusBar, StyleSheet, Text, View } from "react-native";
 
@@ -17,7 +16,6 @@ export default function RootLayout() {
         <Text style={styles.textTittle}>Olá, usuário</Text>
         <Text style={styles.text}>Pronto para planejar mais uma viagem?</Text>
         <CardList />
-        <MaterialIcons name="add-circle-outline" size={50} />
       </View>
     </ScrollView>
   );
@@ -55,5 +53,5 @@ const styles = StyleSheet.create({
   list: {
     width: "100%",
     flex: 1,
-  },
+  }
 });
