@@ -1,11 +1,16 @@
-import { View, StyleSheet, TextInput } from "react-native";
+import { View, StyleSheet, TextInput, TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 
 export default function Header() {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <MaterialIcons name="account-circle" size={40} />
+        <TouchableOpacity onPress={() => router.replace("/perfil")}>
+          <MaterialIcons name="account-circle" size={40} />
+        </TouchableOpacity>
         <View style={styles.input}>
           <MaterialIcons name="search" size={20} style={styles.inputIcon} />
           <TextInput style={styles.inputText} placeholder="procurar nota" />
